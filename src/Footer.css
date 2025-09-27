@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainFooter {
+    background-color: rgb(27, 26, 27);
+    background: linear-gradient(340deg, black 50%, rgb(101, 42, 109) 90%, rgba(203, 19, 228, 0.795) 100%);
+    width: 100%;
+    max-width: 100%;
+    height: 40vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    margin-top: 60vh;
+}
+
+.logofooter img {
+    width: 60px;
+    /* animation: logoMoving 8s linear infinite; */
+    transition: transform 8s ease-in-out;
+}
+.ehub{
+    color: rgb(51, 207, 207);
+}
+
+/* @keyframes logoMoving {
+    from {
+        
+    }
+
+    to {
+        
+    }
+} */
+
+.logofooter img:hover {
+    transform: scale(1.1);
+}
+
+.chilFooter,
+.contentfooter {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-top: 30px; */
+    flex-wrap: wrap;
+}
+
+.chilFooter {
+    padding-top: 30px;
+}
+
+.contentfooter {
+    column-gap: 150px;
+    justify-content: space-between;
+}
+
+
+.pagesfooter,
+.ehub-featurefooter,
+.socialfooter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.coomon a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 2px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.coomon a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out;
+}
+
+.coomon a:hover {
+    color: #ffea70;
+}
+
+.coomon a:hover::before {
+    width: 100%;
+}
+
+
+.coomon a.active {
+    font-weight: bold;
+    color: #fff;
+}
+
+.coomon a.active::before {
+    width: 100%;
+}
+
+/* Icon design */
+.coomon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Responsvie design */
+@media screen and (max-width:1000px) and (min-width:681px) {
+    .contentfooter {
+        column-gap: 90px;
+    }
+    .mainFooter {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .chilFooter {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .contentfooter {
+        justify-content: center;
+        margin-top: 20px;
+        gap: 70px;
+    }
+    .mainFooter {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .mainFooter {
+        height: auto;
+    }
+    .socialfooter{
+        margin-top: -50px;
+        flex-direction: row;
+    }
+
+}

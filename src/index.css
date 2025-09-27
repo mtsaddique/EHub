@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* blur Background */
+.blurbg{
+    position: fixed;
+    filter: blur(8px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    z-index: -11;
+
+}
+.alg-cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.main-login{ 
+    display: flex;   
+    justify-content: center; 
+    align-items: center;
+    height: 380px;
+    max-width: 50%;
+    margin:  auto;
+    background-color: #fcfdff;
+    font-family: 'Arial', sans-serif;
+    gap: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px;
+    overflow: hidden;
+}
+
+/* For Content */
+.content-div{
+    color: white;
+    background: linear-gradient(125deg,rgba(75, 108, 255, 1) 5%, rgba(253, 105, 105, 1) 59%);
+    height: 100%;
+    align-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+    
+}
+.subtext-para{
+    padding: 0 20px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.design-login {
+  padding: 40px;
+  border-radius: 12px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Input wrapper */
+.email-div, .password-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.common-design {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.common-design:focus {
+  border-color: #fd6969;
+  box-shadow: 0 0 5px rgba(253, 105, 105, 0.4);
+}
+
+/* Login Button */
+.btn-login {
+  padding: 12px;
+   background: linear-gradient(-150deg,rgba(75, 108, 255, 1) 5%, rgba(253, 105, 105, 1) 59%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+  background-color: #e35656;
+}
+
+/* Register Text */
+.reg {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.reg a {
+  color: #fd6969;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reg a:hover {
+  text-decoration: underline;
+}
+.logo-hub-form{
+  text-align: center;
+  color: rgb(19, 54, 253);
+}
+/* Input Icon Design */
+
+#Name{
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgTakJm0HeWv_1-X0lEgx3kn1UG9AexpNmrA&s') no-repeat left center;
+  background-position: 10px center;
+  padding-left: 35px; 
+  background-size: 18px;  
+}
+#Name::place-holder{
+  font-size: 8px !important;
+}
+
+#Password{
+  background: url('https://png.pngtree.com/png-vector/20190215/ourmid/pngtree-vector-lock-icon-png-image_515444.jpg') no-repeat;
+  background-position: 9px center;
+  padding-left: 35px; 
+  background-size: 23px;
+  
+}
+#Password::place-holder{
+  font-size: 8px !important;
+}
