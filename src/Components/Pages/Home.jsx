@@ -3,6 +3,8 @@ import { FaSchool } from 'react-icons/fa';
 import uniImg from '../../assets/University.jpg';
 import stuImg from '../../assets/stu.png';
 import schoolImg from '../../assets/school3.jpg';
+import college from '../../assets/college.jpg';
+import jobs from '../../assets/jobs.jpg';
 
 function Home() {
     let cardData = [
@@ -15,7 +17,17 @@ function Home() {
             img: uniImg,
             title: "Top Universities Worldwide",
             desc: "Discover leading universities, their courses, and admission requirements."
+        },
+        {
+            img: college,
+            title: "Discover Colleges Near You",
+            desc: "Explore colleges offering diverse programs and campus life."
+        }, {
+            img: jobs,
+            title: "Find Your Dream Job",
+            desc: "Search full-time and part-time opportunities from trusted companies."
         }
+
     ];
 
     return (
@@ -64,12 +76,16 @@ export function CardObject({ img, title, description }) {
         <div className="cardCategory">
             <div className="textCategory-element">
                 <div className="imgtext-cat">
-                    <img src={img} alt={title} width="200px" />
+                    <img src={img} alt={title} width="200px" height="130px" loading='lazy' />
                 </div>
                 <div className="textContent">
                     <h4>{title}</h4>
-                    <p>{description}</p>
-                    <a href="#" className="Explore_b">Explore--</a>
+                    <div className="descCat">
+                        <p>{description}</p>
+                    </div>
+                    <div className="btnCat">
+                        <a href="#" className="Explore_b">Explore--</a>
+                    </div>
                 </div>
             </div>
         </div>
