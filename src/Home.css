@@ -1,11 +1,40 @@
+body{
+  height: 200vh;
+}
 .main-home-section {
-  background: url('./assets/abstract-digital-grid-black-background.jpg');
+  background: url('./assets/abstract-digital-grid-black-background.webp');
   background-size: cover;
   background-position: center;
   color: white;
   position: relative;
   overflow: hidden;
+  transition: all 1s ease-in;
+  animation: fade 1s ease-in;
+    
 }
+
+@keyframes fade {
+  from {
+    transform: scale(0.9);
+    
+  }
+  to {
+    transform: scale(1);
+    
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;;
+  }
+}
+
 
 /* Overlay for better readability */
 .main-home-section::before {
@@ -169,6 +198,7 @@
     font-size: clamp(0.8rem, 3vw, 0.95rem);
   }
 }
+
 @media screen and (max-width: 354px) {
   .hero-btn {
     font-size: clamp(0.6rem, 2vw, 1rem);
@@ -176,54 +206,133 @@
 }
 
 /* Category Card */
-.main-category-element{
+
+.main-category-element {
   margin-top: 30px;
 }
-.childCardcategory{
+
+.childCardcategory {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 20px 40px 20px;
+  /* padding: 40px 20px 40px 20px; */
   gap: 35px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+  animation-timeline: view(); 
+  animation-range: entry 0% cover 40%;
 }
-.cardCategory{
+
+.cardCategory {
   width: 220px;
   height: auto;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.671);
   border-radius: 8px;
   position: relative;
 }
-.textCategory-element{
- text-align: center;
- padding: 8px 3px 2px 3px;
- position: relative;
+
+.textCategory-element {
+  text-align: center;
+  padding: 8px 3px 2px 3px;
+  position: relative;
 }
+
 /* text */
-.textContent{
+.textContent {
   font-weight: normal;
 }
-.textContent p{
+
+.textContent p {
   font-size: 12px;
   color: rgb(97, 98, 99);
 }
-.Explore_b{
+
+.Explore_b {
   display: inline-block;
   border-radius: 8px;
   border: 1px solid#06b6d4;
   margin-top: 10px;
   margin-bottom: 15px;
-  padding: 5px 20px 5px 20px ;
+  padding: 5px 20px 5px 20px;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease-in;
 }
-.Explore_b:hover{
+
+.Explore_b:hover {
   background: #027488;
   border: 1px solid transparent;
   color: white;
   transform: scale(1.05);
 }
 
+.titleCategory {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* parent centering */
+.titleCategory {
+  text-align: center;
+}
+
+/* typewriter */
+.textCatAni {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  width: 0;
+  animation: typeErase 6s steps(18, end) infinite;
+}
+
+@keyframes typeErase {
+  0% {
+    width: 0;
+  }
+
+  40% {
+    width: 18ch;
+  }
+
+  60% {
+    width: 18ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+/* Logo Of institutes */
+
+.logoName {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 20px 0 20px 0;
+  overflow: hidden;
+  animation: moveLogos 3s linear infinite;
 
 
+}
+
+.logoName img {
+  width: 120px;
+  height: 80px;
+  transition: all 0.3s linear ease-in-out;
+
+}
+
+@keyframes moveLogos {
+  0% {
+    transform: translateX(-0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

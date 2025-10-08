@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaSchool } from 'react-icons/fa';
-import uniImg from '../../assets/University.jpg';
-import stuImg from '../../assets/stu.png';
-import schoolImg from '../../assets/school3.jpg';
-import college from '../../assets/college.jpg';
-import jobs from '../../assets/jobs.jpg';
+import uniImg from '../../assets/University.webp';
+import stuImg from '../../assets/stu.webp';
+import schoolImg from '../../assets/school3.webp';
+import college from '../../assets/college.webp';
+import jobs from '../../assets/jobs.webp';
 
 function Home() {
     let cardData = [
@@ -46,11 +46,43 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <div className="logoHome">
+                <div className="logoName" aria-hidden="true">
+                    <img src="src\assets\Fastlogos.webp" alt="no show" />
+                    <img src="src\assets\Nust.png" alt="no show" />
+                    <img src="src\assets\beaconhouse-logo.webp" alt="no show" />
+                    <img src="src\assets\KipsCollege.webp" alt="no show" />
+                    <img src="src\assets\pgc.webp" alt="no show" />
+                    <img src="src\assets\OxfordColorLogo.webp" alt="no show" />
+                    <img src="src\assets\columbia.webp" alt="no show" />
+                    <img src="src\assets\Stanford.webp" alt="no show" />
+
+                    <img src="src\assets\Fastlogos.webp" alt="no show" />
+                    <img src="src\assets\Nust.webp" alt="no show" />
+                    <img src="src\assets\beaconhouse-logo.webp" alt="no show" />
+                    <img src="src\assets\KipsCollege.webp" alt="no show" />
+                    <img src="src\assets\pgc.webp" alt="no show" />
+                    <img src="src\assets\OxfordColorLogo.webp" alt="no show" />
+                    <img src="src\assets\columbia.webp" alt="no show" />
+                    <img src="src\assets\Stanford.webp" alt="no show" />
+
+
+                </div>
+            </div>
+
+            {/* <div className="ReasonSection">
+                <div className="headingreason">
+                    <h3>Why Choose eHub?</h3>
+                </div>
+                <div className="reasonAns">
+
+                </div>
+            </div> */}
 
             {/* Categories */}
             <div className="main-category-element">
                 <div className="titleCategory">
-                    <h1 style={{ textAlign: "center" }}>Explore Categories</h1>
+                    <h1 className='textCatAni' >Explore Categories</h1>
                 </div>
                 <div className="childcategory-flex">
                     <div className="childCardcategory">
