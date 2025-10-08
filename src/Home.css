@@ -11,18 +11,14 @@ body {
   overflow: hidden;
   transition: all 1s ease-in;
   animation: fade 1s ease-in;
-
 }
 
 @keyframes fade {
   from {
     transform: scale(0.9);
-
   }
-
   to {
     transform: scale(1);
-
   }
 }
 
@@ -31,14 +27,11 @@ body {
     transform: scale(0.5);
     opacity: 0;
   }
-
   to {
     transform: scale(1);
     opacity: 1;
-    ;
   }
 }
-
 
 /* Overlay for better readability */
 .main-home-section::before {
@@ -136,12 +129,9 @@ body {
 
 /* Floating animation */
 @keyframes float {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateX(0);
   }
-
   50% {
     transform: translateX(-12px);
   }
@@ -154,19 +144,14 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
-
   .image-element-heroSection img {
     max-width: 100%;
     height: auto;
   }
-
   .hero-btn {
     padding: 10px 20px;
     border-radius: 8px;
     font-size: clamp(0.9rem, 2vw, 1.05rem);
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
     margin-right: 2vw;
   }
 }
@@ -175,16 +160,16 @@ body {
   .child-home-element {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    padding-top: 30px;
   }
 
   .text-element-heroSection {
     max-width: 100%;
-
   }
 
   .hero-btn {
     font-size: clamp(0.85rem, 2.5vw, 1rem);
-
   }
 
   .image-element-heroSection img {
@@ -192,9 +177,25 @@ body {
     height: auto;
   }
 
-  .child-home-element {
-    align-items: center;
-    padding-top: 30px;
+  .titleCategory {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(238, 184, 114);
+  }
+
+  .textCatAni {
+    color: white; /* ✅ visible on dark bg */
+    animation: none; /* disable typing for mobile */
+  }
+
+  .textCategory-element {
+    animation: none;
+  }
+
+  .cardCategory {
+    animation: fadeIn 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -211,7 +212,6 @@ body {
 }
 
 /* Category Card */
-
 .main-category-element {
   margin-top: 30px;
   animation: fadeIn 1s ease-in;
@@ -224,7 +224,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* padding: 40px 20px 40px 20px; */
   gap: 35px;
   margin-bottom: 20px;
   animation: fadeIn 1s ease-in;
@@ -247,10 +246,6 @@ body {
 }
 
 /* text */
-.textContent {
-  font-weight: normal;
-}
-
 .textContent p {
   font-size: 12px;
   color: rgb(97, 98, 99);
@@ -259,10 +254,10 @@ body {
 .Explore_b {
   display: inline-block;
   border-radius: 8px;
-  border: 1px solid#06b6d4;
+  border: 1px solid #06b6d4;
   margin-top: 10px;
   margin-bottom: 15px;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 20px;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease-in;
@@ -280,12 +275,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* parent centering */
-.titleCategory {
-  text-align: center;
-}
-
-/* typewriter */
+/* Typewriter animation */
 .textCatAni {
   display: inline-block;
   position: relative;
@@ -302,21 +292,22 @@ body {
   0% {
     width: 0;
   }
-
   40% {
     width: 18ch;
   }
-
   60% {
     width: 18ch;
   }
-
   100% {
     width: 0;
   }
 }
 
-/* Logo Of institutes */
+/* Logo Section */
+.logoHome {
+  overflow: hidden;
+  padding: 20px 0;
+}
 
 .logoName {
   display: flex;
@@ -324,39 +315,24 @@ body {
   align-items: center;
   gap: 60px;
   padding: 20px 20px;
-  overflow: hidden;
-  animation: moveLogos 3s linear infinite;
-
-
+  animation: moveLogos 15s linear infinite;
 }
 
 .logoName img {
   width: 100px;
   height: 90px;
-  transition: all 0.3s linear ease-in-out;
-
+  transition: transform 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-  .titleCategory{
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(238, 184, 114);
-  }
-  .textCatAni{
-    color: black;
-    animation: none;
-  }
-
-  .textCategory-element {
-    animation: fadeIn 1s ease-in;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  .childCardcategory{
-    animation: fadeIn 1s ease-in;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-
+.logoName img:hover {
+  transform: scale(1.1);
 }
+
+/* @keyframes moveLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
