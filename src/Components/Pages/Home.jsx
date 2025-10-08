@@ -50,22 +50,12 @@ function Home() {
                 <div className="logoName" aria-hidden="true">
                     <img src="src\assets\Fastlogos.webp" alt="no show" />
                     <img src="src\assets\Nust.png" alt="no show" />
-                    <img src="src\assets\beaconhouse-logo.webp" alt="no show" />
+                    
                     <img src="src\assets\KipsCollege.webp" alt="no show" />
                     <img src="src\assets\pgc.webp" alt="no show" />
                     <img src="src\assets\OxfordColorLogo.webp" alt="no show" />
                     <img src="src\assets\columbia.webp" alt="no show" />
                     <img src="src\assets\Stanford.webp" alt="no show" />
-
-                    <img src="src\assets\Fastlogos.webp" alt="no show" />
-                    <img src="src\assets\Nust.webp" alt="no show" />
-                    <img src="src\assets\beaconhouse-logo.webp" alt="no show" />
-                    <img src="src\assets\KipsCollege.webp" alt="no show" />
-                    <img src="src\assets\pgc.webp" alt="no show" />
-                    <img src="src\assets\OxfordColorLogo.webp" alt="no show" />
-                    <img src="src\assets\columbia.webp" alt="no show" />
-                    <img src="src\assets\Stanford.webp" alt="no show" />
-
 
                 </div>
             </div>

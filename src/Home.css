@@ -1,6 +1,7 @@
-body{
+body {
   height: 200vh;
 }
+
 .main-home-section {
   background: url('./assets/abstract-digital-grid-black-background.webp');
   background-size: cover;
@@ -10,17 +11,18 @@ body{
   overflow: hidden;
   transition: all 1s ease-in;
   animation: fade 1s ease-in;
-    
+
 }
 
 @keyframes fade {
   from {
     transform: scale(0.9);
-    
+
   }
+
   to {
     transform: scale(1);
-    
+
   }
 }
 
@@ -29,9 +31,11 @@ body{
     transform: scale(0.5);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
-    opacity: 1;;
+    opacity: 1;
+    ;
   }
 }
 
@@ -175,6 +179,7 @@ body{
 
   .text-element-heroSection {
     max-width: 100%;
+
   }
 
   .hero-btn {
@@ -209,6 +214,9 @@ body{
 
 .main-category-element {
   margin-top: 30px;
+  animation: fadeIn 1s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .childCardcategory {
@@ -220,7 +228,7 @@ body{
   gap: 35px;
   margin-bottom: 20px;
   animation: fadeIn 1s ease-in;
-  animation-timeline: view(); 
+  animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
 
@@ -285,7 +293,7 @@ body{
   white-space: nowrap;
   font-weight: 700;
   font-size: 40px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: sans-serif;
   width: 0;
   animation: typeErase 6s steps(18, end) infinite;
 }
@@ -312,9 +320,10 @@ body{
 
 .logoName {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 60px;
-  padding: 20px 0 20px 0;
+  padding: 20px 20px;
   overflow: hidden;
   animation: moveLogos 3s linear infinite;
 
@@ -322,17 +331,33 @@ body{
 }
 
 .logoName img {
-  width: 120px;
-  height: 80px;
+  width: 100px;
+  height: 90px;
   transition: all 0.3s linear ease-in-out;
 
 }
 
-@keyframes moveLogos {
+@media screen and (max-width: 768px) {
+
+
+  .textCategory-element {
+    animation: fadeIn 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .childCardcategory{
+    animation: fadeIn 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+}
+
+/* @keyframes moveLogos {
   0% {
     transform: translateX(-0);
   }
   100% {
     transform: translateX(-50%);
   }
-}
+} */
