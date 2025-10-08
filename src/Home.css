@@ -180,11 +180,10 @@ body {
   .titleCategory {
     margin-top: 20px;
     text-align: center;
-    color: rgb(238, 184, 114);
   }
 
   .textCatAni {
-    color: white; /* ✅ visible on dark bg */
+    color: rgb(238, 184, 114);
     animation: none; /* disable typing for mobile */
   }
 
@@ -277,18 +276,12 @@ body {
 
 /* Typewriter animation */
 .textCatAni {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
   font-weight: 700;
   font-size: 40px;
   font-family: sans-serif;
-  width: 0;
-  animation: typeErase 6s steps(18, end) infinite;
 }
 
-@keyframes typeErase {
+/* @keyframes typeErase {
   0% {
     width: 0;
   }
@@ -301,7 +294,7 @@ body {
   100% {
     width: 0;
   }
-}
+} */
 
 /* Logo Section */
 .logoHome {

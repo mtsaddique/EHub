@@ -43,7 +43,7 @@ function Home() {
         <div className="child-home-element">
           <div className="text-element-heroSection">
             <h1>Your Digital Hub for Everything</h1>
-            <p>Explore jobs, education, and more — all in one place.</p>
+            <h3>Explore jobs, education, and more — all in one place.</h3>
             <button className="hero-btn primary">🚀 Get Started</button>
             <button className="hero-btn secondary">🔍 Explore Categories</button>
           </div>
@@ -71,6 +71,7 @@ function Home() {
       <div className="main-category-element">
         <div className="titleCategory">
           <h1 className="textCatAni">Explore Categories</h1>
+          <p>A single hub for jobs, freelancing, and education opportunities.</p>
         </div>
 
         <div className="childcategory-flex">
