@@ -12,6 +12,9 @@ import pgc from '../../assets/pgc.webp';
 import oxford from '../../assets/OxfordColorLogo.webp';
 import columbia from '../../assets/columbia.webp';
 import stanford from '../../assets/Stanford.webp';
+import Owner from '../../assets/Owner.jpg';
+import Trader from '../../assets/Trader.jpg';
+import Ibrahim from '../../assets/ibrahim.jpg';
 
 function Home() {
   const cardData = [
@@ -87,6 +90,48 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* Success Stories Section */}
+     
+      <section className="join-community">
+        <h2>Join the <span>eHub</span> Community</h2>
+        <p>
+          Stay updated with the latest jobs, learning opportunities, and success stories.
+          Be part of a growing network of students, freelancers, and professionals.
+        </p>
+        <div className="btn-container">
+          <button className="join-btn">Join Now</button>
+          <button className="subscribe-btn">Subscribe</button>
+        </div>
+      </section>
+
+       <section className="success-stories">
+        <h2>Success Stories from Our <span>eHub Stars</span></h2>
+        <p className="subtext">
+          Inspiring journeys of students, freelancers, and professionals who started their path here.
+        </p>
+
+        <div className="stories-container">
+          <div className="story-card">
+            <img src={Ibrahim} alt="Student 1"  />
+            <h3>Muhammad Ibrahim</h3>
+            <p>Started as a college student, now a web developer at a top software house.</p>
+          </div>
+
+          <div className="story-card">
+            <img src={Owner} alt="Student 2" className='pos' />
+            <h3>Muhammad Tayyab</h3>
+            <p>Found his first freelance client through eHub and now runs his own team.</p>
+          </div>
+
+          <div className="story-card">
+            <img src={Trader} alt="Student 3" className='pos' />
+            <h3>Muhammad Ibad</h3>
+            <p>Got guidance for university admissions and is now studying at NUST.</p>
+          </div>
+        </div>
+
+        <button className="read-more-btn">Read More Stories</button>
+      </section>
     </>
   );
 }
