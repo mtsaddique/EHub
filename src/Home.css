@@ -542,6 +542,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .main-category-element{
+    animation: none;
+  }
   .join-community {
     padding: 50px 15px;
   }
@@ -588,5 +591,16 @@ body {
   .story-card img {
     width: 90px;
     height: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  .join-btn,
+  .subscribe-btn {
+    width: 100%;
+    max-width: none;
+  }
+  .textCatAni {
+    font-size: 28px;
   }
 }
