@@ -124,7 +124,7 @@ function Home() {
           </div>
 
           <div className="story-card">
-            <img src={Trader} alt="Student 3" className='pos' />
+            {/* <img src={Trader} alt="Student 3" className='pos' /> */}
             <h3>Muhammad Ibad</h3>
             <p>Got guidance for university admissions and is now studying at NUST.</p>
           </div>

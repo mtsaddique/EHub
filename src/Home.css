@@ -202,7 +202,7 @@ body {
   .cardCategory {
     animation: fadeIn 1s ease-in;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
   }
 }
 
@@ -233,9 +233,7 @@ body {
   flex-wrap: wrap;
   gap: 35px;
   margin-bottom: 20px;
-  animation: fadeIn 1s ease-in;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  
 }
 
 .cardCategory {
@@ -329,14 +327,7 @@ body {
   transform: scale(1.1);
 }
 
-/* @keyframes moveLogos {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-} */
+
 
 
 /* ===== Join Community Section ===== */
@@ -352,7 +343,7 @@ body {
   /* Animation on scroll */
   animation: slideFromLeft 1.2s ease-in-out both;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 30%;
 }
 
 .join-community h2 {
@@ -415,11 +406,6 @@ body {
   text-align: center;
   padding: 80px 20px;
   background: #fafafa;
-
-  /* Animation on scroll */
-  animation: slideFromRight 1.2s ease-in-out both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 
 .success-stories h2 {
@@ -456,7 +442,7 @@ body {
   /* Card animation */
   animation: fadeIn 1s ease-in;
   animation-timeline: view();
-  animation-range: entry 10% cover 50%;
+  animation-range: entry 10% cover 30%;
 }
 
 .story-card:hover {
