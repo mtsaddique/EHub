@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import uniImg from '../../assets/University.webp';
 import stuImg from '../../assets/stu.webp';
 import schoolImg from '../../assets/school3.webp';
 import college from '../../assets/college.webp';
 import jobs from '../../assets/jobs.webp';
-
 import fastLogo from '../../assets/Fastlogos.webp';
 import nust from '../../assets/Nust.webp';
 import kips from '../../assets/KipsCollege.webp';
@@ -39,6 +39,22 @@ function Home() {
       desc: "Search full-time and part-time opportunities from trusted companies."
     }
   ];
+
+    useEffect(() => {
+    const handleUserInteraction = () => {
+      const message = new SpeechSynthesisUtterance(
+        "Welcome Tayyab"
+      );
+      speechSynthesis.speak(message);
+      window.removeEventListener("click", handleUserInteraction);
+    };
+
+    window.addEventListener("click", handleUserInteraction);
+
+    return () => {
+      window.removeEventListener("click", handleUserInteraction);
+    };
+  }, []);
 
   return (
     <>
