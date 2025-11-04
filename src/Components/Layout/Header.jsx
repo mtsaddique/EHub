@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaHome, FaInfo, FaHeadset, FaPhoneAlt } from "react-icons/fa";
 import { BsList } from "react-icons/bs";
 import { BiX } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
