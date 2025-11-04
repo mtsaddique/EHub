@@ -1,12 +1,13 @@
 import React from 'react'
 import { FaInstagram, FaFacebook, FaTwitter, FaHome, FaInfo, FaHeadset, FaPhoneAlt, FaBriefcase, FaLaptopCode, FaSchool, FaUserGraduate, FaUniversity, FaGraduationCap } from 'react-icons/fa'
 export default function Footer() {
+    
     return (
         <>
             <div className="mainFooter">
                 <div className="chilFooter">
-                    <div className="logofooter">
-                        <img src="src\assets\removeBg.png" alt="no show" />
+                    <div className="logofooter" onClick={()=> window.location.href="/"} style={{cursor:"pointer"}}>
+                        <img src="src\assets\removeBg.webp" alt="no show" />
                         <h2><span className='ehub'>eH</span>ub</h2>
                     </div>
                     <div className="contentfooter">

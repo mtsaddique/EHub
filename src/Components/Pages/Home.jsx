@@ -40,21 +40,7 @@ function Home() {
     }
   ];
 
-    useEffect(() => {
-    const handleUserInteraction = () => {
-      const message = new SpeechSynthesisUtterance(
-        "Welcome Tayyab"
-      );
-      speechSynthesis.speak(message);
-      window.removeEventListener("click", handleUserInteraction);
-    };
-
-    window.addEventListener("click", handleUserInteraction);
-
-    return () => {
-      window.removeEventListener("click", handleUserInteraction);
-    };
-  }, []);
+  
 
   return (
     <>

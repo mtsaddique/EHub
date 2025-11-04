@@ -6,7 +6,7 @@
 
 .mainheader {
   width: 100%;
-  background: #111111e5;
+  background: #111111;
   color: white;
 }
 
@@ -42,6 +42,7 @@
 .comon a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .comon a:hover {
@@ -67,7 +68,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 50px;
     flex-direction: column;
-    background: #222;
+    background: #0c0c0c;
     width: 100%;
     height: 100%;    
     padding: 20px;

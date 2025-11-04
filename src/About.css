@@ -1,0 +1,121 @@
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* Title */
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ehub-color {
+  color: #0070f3;
+}
+
+.about-text {
+  font-size: 17px;
+  opacity: 0.9;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* Boxes */
+.about-box {
+  background: #f8faff;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.07);
+}
+
+/* Mission/Vision Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin: 40px 0;
+}
+
+.about-card {
+  background: #f3f6fb;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.07);
+}
+
+.about-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* What We Provide */
+.about-provide-section {
+  background: #e8f2ff;
+  padding: 28px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+.center {
+  text-align: center;
+}
+
+.about-list {
+  margin-top: 12px;
+  font-size: 17px;
+}
+
+/* Founder */
+.about-owner {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 12px rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
+
+.owner-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.owner-name {
+  font-size: 17px;
+  font-weight: bold;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-text, .about-list {
+    font-size: 15px;
+  }
+}

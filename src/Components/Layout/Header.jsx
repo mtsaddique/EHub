@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { FaHome, FaInfo, FaHeadset, FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
-import {BsList} from 'react-icons/bs';
+import { FaHome, FaInfo, FaHeadset, FaPhoneAlt } from "react-icons/fa";
+import { BsList } from "react-icons/bs";
 import { BiX } from "react-icons/bi";
-
+import { NavLink } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,38 +10,48 @@ function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const goHome = () => {
+        window.location.href = "/";
+  };
 
   return (
     <header className="mainheader">
       <div className="childheader">
+
         {/* Logo */}
-        <div className="logoheader">
-          <img src="src\assets\removeBg.png" alt="logo" />
+        <div className="logoheader" style={{cursor:"pointer"}} onClick={goHome}>
+          <img src="src\assets\removeBg.webp" alt="logo" />
           <h2>
             <span className="ehub">eH</span>ub
           </h2>
         </div>
 
-        {/* Hamburger Button (Mobile Only) */}
+        {/* Mobile Menu Button */}
         <div className="menu-btn" onClick={toggleMenu}>
           {isOpen ? <BiX size={25} /> : <BsList size={25} />}
         </div>
 
         {/* Navbar Links */}
         <nav className={`contentheader ${isOpen ? "active" : ""}`}>
-          <div className="comon">
-            <FaHome size={20} /> <a href="#">Home</a>
+          <div className="comon">           
+            <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
           </div>
+
           <div className="comon">
-            <FaInfo size={20} /> <a href="#">About</a>
+            
+            <NavLink to="/about" onClick={() => setIsOpen(false)}>About</NavLink>
           </div>
+
           <div className="comon">
-            <FaHeadset size={20} /> <a href="#">Service</a>
+            
+            <NavLink to="/services" onClick={() => setIsOpen(false)}>Services</NavLink>
           </div>
-          <div className="comon">
-            <FaPhoneAlt size={20} /> <a href="#">Contact</a>
+
+          <div className="comon">           
+            <NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact</NavLink>
           </div>
         </nav>
+
       </div>
     </header>
   );
