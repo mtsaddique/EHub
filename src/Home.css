@@ -8,7 +8,7 @@
   position: relative;
   overflow: hidden;
   transition: all 1s ease-in;
-  animation: fade 1s ease-in;
+  /* animation: fade 1s ease-in; */
 }
 
 @keyframes fade {
@@ -198,9 +198,9 @@
   }
 
   .cardCategory {
-    animation: fadeIn 1s ease-in;
+    /* animation: fadeIn 1s ease-in;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
   }
 }
 
@@ -219,9 +219,9 @@
 /* Category Card */
 .main-category-element {
   margin-top: 30px;
-  animation: fadeIn 1s ease-in;
+  /* animation: fadeIn 1s ease-in;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 40%; */
 }
 
 .childCardcategory {
@@ -312,7 +312,7 @@
   align-items: center;
   gap: 60px;
   padding: 20px 20px;
-  animation: moveLogos 15s linear infinite;
+  /* animation: moveLogos 15s linear infinite; */
 }
 
 .logoName img {
@@ -339,9 +339,9 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   /* Animation on scroll */
-  animation: slideFromLeft 1.2s ease-in-out both;
+  /* animation: slideFromLeft 1.2s ease-in-out both;
   animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  animation-range: entry 0% cover 30%; */
 }
 
 .join-community h2 {
@@ -438,9 +438,9 @@
   text-align: center;
 
   /* Card animation */
-  animation: fadeIn 1s ease-in;
+  /* animation: fadeIn 1s ease-in;
   animation-timeline: view();
-  animation-range: entry 10% cover 30%;
+  animation-range: entry 10% cover 30%; */
 }
 
 .story-card:hover {

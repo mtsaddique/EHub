@@ -7,7 +7,7 @@ import './Home.css'
 import './About.css'
 import './Service.css'
 import './Contact.css'
-
+import './Product.css'
 import App from './App.jsx'
 import Home from './Components/Pages/Home.jsx'
 import About from './Components/Pages/About.jsx'
@@ -15,6 +15,7 @@ import Contact from './Components/Pages/Contact.jsx'
 import Services from './Components/Pages/Service.jsx'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Product from './Components/Pages/Product.jsx'
 
 const Rouutes = () => {
   return (
@@ -24,6 +25,7 @@ const Rouutes = () => {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="services" element={<Services />} />
+        <Route path="product" element={<Product/>} />
       </Route>
     </Routes>
   )

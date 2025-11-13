@@ -11,19 +11,21 @@ export default function Service() {
     </div>
   );
 }
+export const smoothScroll = (e, targetId) => {
+  e.preventDefault();
+  const section = document.getElementById(targetId);
+  if (section) {
+    const yOffset = -80;
+    const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+};
+
 
 // 🔹 Hero Section
 function Hero() {
   // Smooth scroll function
-  const smoothScroll = (e, targetId) => {
-    e.preventDefault();
-    const section = document.getElementById(targetId);
-    if (section) {
-      const yOffset = -80;
-      const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  };
+  
 
   return (
     <header className="hero">

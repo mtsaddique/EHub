@@ -15,6 +15,8 @@ import stanford from '../../assets/Stanford.webp';
 import Owner from '../../assets/Owner.jpg';
 import Trader from '../../assets/Trader.jpg';
 import Ibrahim from '../../assets/ibrahim.jpg';
+import { NavLink } from 'react-router-dom';
+import {smoothScroll} from './Service.jsx';
 
 function Home() {
   const cardData = [
@@ -49,8 +51,8 @@ function Home() {
           <div className="text-element-heroSection">
             <h1>Your Digital Hub for Everything</h1>
             <h3>Explore jobs, education, and more — all in one place.</h3>
-            <button className="hero-btn primary">🚀 Get Started</button>
-            <button className="hero-btn secondary">🔍 Explore Categories</button>
+            <NavLink to='/services' className="hero-btn primary">🚀 Get Started</NavLink>
+            <a href='#titleCategory' onClick={(e) => smoothScroll(e , "titleCategory")} className="hero-btn secondary">🔍 Explore Categories</a>
           </div>
 
           <div className="image-element-heroSection">
@@ -73,7 +75,7 @@ function Home() {
       </div>
 
       {/* Categories */}
-      <div className="main-category-element">
+      <div id='titleCategory' className="main-category-element">
         <div className="titleCategory">
           <h1 className="textCatAni">Explore Categories</h1>
           <p>A single hub for jobs, freelancing, and education opportunities.</p>

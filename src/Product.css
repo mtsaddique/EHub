@@ -1,0 +1,222 @@
+.product-page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Section Styling */
+.forschool,
+.forCollege,
+.forUniversity {
+  margin-bottom: 3rem;
+}
+
+.product-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Scrollable Row Container */
+.scrollable-row {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 transparent;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollable-row::-webkit-scrollbar-track {
+  background: #f7fafc;
+  border-radius: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+/* Card Styling */
+.parentCard{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.card-product {
+  min-width: 260px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-product h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 1rem 1.25rem 0.5rem;
+  line-height: 1.4;
+}
+
+.card-product p {
+  color: #718096;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0 1.25rem 1rem;
+  flex-grow: 1;
+}
+
+.location-product {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-size: 0.875rem;
+  margin: 0 1.25rem 1rem;
+  font-weight: 500;
+}
+
+.btn-product {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 1.25rem 1.25rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-product:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a42a0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-page-wrapper {
+    padding: 1rem;
+  }
+  
+  .product-page-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-product {
+    min-width: 280px;
+  }
+  
+  .scrollable-row {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-page-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-product {
+    min-width: 260px;
+  }
+  
+  .card-product h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animation for card entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-product {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Stagger animation for cards */
+.card-product:nth-child(1) { animation-delay: 0.1s; }
+.card-product:nth-child(2) { animation-delay: 0.2s; }
+.card-product:nth-child(3) { animation-delay: 0.3s; }
+.card-product:nth-child(4) { animation-delay: 0.4s; }
+.card-product:nth-child(5) { animation-delay: 0.5s; }
+
+/* Section-specific color accents */
+.forschool .product-page-title {
+  color: #e53e3e;
+}
+
+.forCollege .product-page-title {
+  color: #3182ce;
+}
+
+.forUniversity .product-page-title {
+  color: #805ad5;
+}
+
+.forschool .btn-product {
+  background: linear-gradient(135deg, #fc8181 0%, #e53e3e 100%);
+}
+
+.forCollege .btn-product {
+  background: linear-gradient(135deg, #63b3ed 0%, #3182ce 100%);
+}
+
+.forUniversity .btn-product {
+  background: linear-gradient(135deg, #b794f4 0%, #805ad5 100%);
+}
+
+.forschool .btn-product:hover {
+  background: linear-gradient(135deg, #f56565 0%, #c53030 100%);
+}
+
+.forCollege .btn-product:hover {
+  background: linear-gradient(135deg, #4299e1 0%, #2b6cb0 100%);
+}
+
+.forUniversity .btn-product:hover {
+  background: linear-gradient(135deg, #9f7aea 0%, #6b46c1 100%);
+}

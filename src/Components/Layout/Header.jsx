@@ -49,6 +49,9 @@ function Header() {
           <div className="comon">           
             <NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact</NavLink>
           </div>
+          <div className="comon">           
+            <NavLink to="/product" onClick={() => setIsOpen(false)}>Product</NavLink>
+          </div>
         </nav>
 
       </div>
