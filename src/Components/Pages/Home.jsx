@@ -16,7 +16,7 @@ import Owner from '../../assets/Owner.jpg';
 import Trader from '../../assets/Trader.jpg';
 import Ibrahim from '../../assets/ibrahim.jpg';
 import { NavLink } from 'react-router-dom';
-import {smoothScroll} from './Service.jsx';
+import { smoothScroll } from './Service.jsx';
 
 function Home() {
   const cardData = [
@@ -42,7 +42,7 @@ function Home() {
     }
   ];
 
-  
+
 
   return (
     <>
@@ -51,8 +51,8 @@ function Home() {
           <div className="text-element-heroSection">
             <h1>Your Digital Hub for Everything</h1>
             <h3>Explore jobs, education, and more — all in one place.</h3>
-            <NavLink to='/services' className="hero-btn primary">🚀 Get Started</NavLink>
-            <a href='#titleCategory' onClick={(e) => smoothScroll(e , "titleCategory")} className="hero-btn secondary">🔍 Explore Categories</a>
+            <NavLink to='/services' className="hero-btn primary cooo">🚀 Get Started</NavLink>
+            <a href='#titleCategory cooo' onClick={(e) => smoothScroll(e, "titleCategory")} className="hero-btn secondary">🔍 Explore Categories</a>
           </div>
 
           <div className="image-element-heroSection">
@@ -95,7 +95,7 @@ function Home() {
         </div>
       </div>
       {/* Success Stories Section */}
-     
+
       <section className="join-community">
         <h2>Join the <span>eHub</span> Community</h2>
         <p>
@@ -108,7 +108,15 @@ function Home() {
         </div>
       </section>
 
-       <section className="success-stories">
+      <Review />
+    </>
+  );
+}
+
+export function Review(){
+  return(
+    <>
+      <section className="success-stories">
         <h2>Success Stories from Our <span>eHub Stars</span></h2>
         <p className="subtext">
           Inspiring journeys of students, freelancers, and professionals who started their path here.
@@ -116,7 +124,7 @@ function Home() {
 
         <div className="stories-container">
           <div className="story-card">
-            <img src={Ibrahim} alt="Student 1"  />
+            <img src={Ibrahim} alt="Student 1" />
             <h3>Muhammad Ibrahim</h3>
             <p>Started as a college student, now a web developer at a top software house.</p>
           </div>
@@ -128,7 +136,7 @@ function Home() {
           </div>
 
           <div className="story-card">
-            {/* <img src={Trader} alt="Student 3" className='pos' /> */}
+            <img src={Trader} alt="Student 3" className='pos' />
             <h3>Muhammad Ibad</h3>
             <p>Got guidance for university admissions and is now studying at NUST.</p>
           </div>
@@ -137,7 +145,7 @@ function Home() {
         <button className="read-more-btn">Read More Stories</button>
       </section>
     </>
-  );
+  )
 }
 
 export default Home;

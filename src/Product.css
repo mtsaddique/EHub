@@ -1,3 +1,39 @@
+.filterbtn{
+  display: flex;
+  justify-content: center;
+  /* margin: 2rem 0 0 0; */
+}
+.filterbtnfun{
+  padding: 0.9rem;
+  width: 340px;
+  margin-top: 1rem;
+  border-radius: 8px 8px 8px 8px;
+  cursor: pointer;
+  
+}
+.filterbtnfun::placeholder{
+  padding-left: 10px;
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(162, 0, 177);
+}
+.filterbtnfun:focus{
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  transition: all 0.3s ease-in-out;
+}
+.filterMul{
+  padding: 0.9rem 1.5rem;
+  margin-left: 1rem;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 8px 8px 8px 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .product-page-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -19,34 +55,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-/* Scrollable Row Container */
-.scrollable-row {
-  display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  padding: 1rem 0.5rem;
-  scrollbar-width: thin;
-  scrollbar-color: #cbd5e0 transparent;
-}
-
-.scrollable-row::-webkit-scrollbar {
-  height: 6px;
-}
-
-.scrollable-row::-webkit-scrollbar-track {
-  background: #f7fafc;
-  border-radius: 10px;
-}
-
-.scrollable-row::-webkit-scrollbar-thumb {
-  background: #cbd5e0;
-  border-radius: 10px;
-}
-
-.scrollable-row::-webkit-scrollbar-thumb:hover {
-  background: #a0aec0;
 }
 
 /* Card Styling */

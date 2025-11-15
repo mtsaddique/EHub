@@ -70,7 +70,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.text-element-heroSection h3{
+  margin-bottom: 20px;
+}
 .text-element-heroSection p {
   font-size: 1.2rem;
   margin-bottom: 30px;
@@ -86,6 +88,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
+  text-decoration: none;
 }
 
 .hero-btn.primary {
