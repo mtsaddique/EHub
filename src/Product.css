@@ -1,29 +1,33 @@
-.filterbtn{
+.filterbtn {
   display: flex;
   justify-content: center;
   /* margin: 2rem 0 0 0; */
 }
-.filterbtnfun{
+
+.filterbtnfun {
   padding: 0.9rem;
   width: 340px;
   margin-top: 1rem;
   border-radius: 8px 8px 8px 8px;
   cursor: pointer;
-  
+
 }
-.filterbtnfun::placeholder{
+
+.filterbtnfun::placeholder {
   padding-left: 10px;
   font-size: 16px;
   font-style: italic;
   color: rgb(162, 0, 177);
 }
-.filterbtnfun:focus{
+
+.filterbtnfun:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
   transition: all 0.3s ease-in-out;
 }
-.filterMul{
+
+.filterMul {
   padding: 0.9rem 1.5rem;
   margin-left: 1rem;
   background-color: purple;
@@ -58,12 +62,52 @@
 }
 
 /* Card Styling */
-.parentCard{
+.slider-wrapper {
+  position: relative;
+}
+
+.parentCard {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: nowrap;
   overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  scrollbar-width: none;
 }
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  pointer-events: auto;
+
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.slider-btn.left {
+  left: -20px;
+}
+
+.slider-btn.right {
+  right: 0px;
+}
+
+.card-product {
+  min-width: 260px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+
 .card-product {
   min-width: 260px;
   background: white;
@@ -74,11 +118,22 @@
   border: 1px solid #e2e8f0;
   display: flex;
   flex-direction: column;
+  animation: autoSlide 20s linear infinite;
 }
 
 .card-product:hover {
+  animation-play-state: paused;
   transform: translateY(-8px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+@keyframes autoSlide {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);}
+
+  
 }
 
 .card-product img {
@@ -141,15 +196,15 @@
   .product-page-wrapper {
     padding: 1rem;
   }
-  
+
   .product-page-title {
     font-size: 1.5rem;
   }
-  
+
   .card-product {
     min-width: 280px;
   }
-  
+
   .scrollable-row {
     gap: 1rem;
   }
@@ -159,11 +214,11 @@
   .product-page-title {
     font-size: 1.25rem;
   }
-  
+
   .card-product {
     min-width: 260px;
   }
-  
+
   .card-product h3 {
     font-size: 1.1rem;
   }
@@ -175,6 +230,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -186,11 +242,25 @@
 }
 
 /* Stagger animation for cards */
-.card-product:nth-child(1) { animation-delay: 0.1s; }
-.card-product:nth-child(2) { animation-delay: 0.2s; }
-.card-product:nth-child(3) { animation-delay: 0.3s; }
-.card-product:nth-child(4) { animation-delay: 0.4s; }
-.card-product:nth-child(5) { animation-delay: 0.5s; }
+.card-product:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.card-product:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card-product:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.card-product:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.card-product:nth-child(5) {
+  animation-delay: 0.5s;
+}
 
 /* Section-specific color accents */
 .forschool .product-page-title {
