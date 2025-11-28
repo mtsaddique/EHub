@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { d } from '../../CommonFunction/Data.js';
 import { Review } from './Home.jsx';
 import { GoChevronLeft } from "react-icons/go";
@@ -219,8 +219,18 @@ export function University({ data }) {
 
 export function FreeLancer({ data }) {
     const slidebar = useRef(null);
+    const [cardWidth, setCardWidth] = useState(300); // default width
 
-    const cardWidth = slidebar.current.querySelector('.card-product').offsetWidth + 16;
+    // Calculate width AFTER render
+    useEffect(() => {
+        if (slidebar.current) {
+            const card = slidebar.current.querySelector(".card-product");
+            if (card) {
+                setCardWidth(card.offsetWidth + 16);
+            }
+        }
+    }, [data]);
+
     const moveLeft = () => {
         slidebar.current.scrollBy({ left: -cardWidth, behavior: "smooth" });
     };
