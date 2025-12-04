@@ -16,6 +16,7 @@ import Services from './Components/Pages/Service.jsx'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Product from './Components/Pages/Product.jsx'
+import ViewDetail from './Components/PopUp/ViewDetail.jsx'
 
 const Rouutes = () => {
   return (
@@ -25,7 +26,9 @@ const Rouutes = () => {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="services" element={<Services />} />
-        <Route path="product" element={<Product/>} />
+        <Route path="product" element={<Product/>} >   
+        </Route>
+        <Route path="viewdetail/:type/:id" element={<ViewDetail />} />
       </Route>
     </Routes>
   )

@@ -17,6 +17,7 @@ export const d = {
       rating: 4.5,
       fee: 50000,
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLH-E-ZiWlN4cXX7v3k5-HIIqs5nWC_3euA&s",
+      description: "Greenwood High is a prestigious institution offering comprehensive education with modern facilities and expert faculty."
     },
     {
       id: 2,
@@ -35,6 +36,7 @@ export const d = {
       rating: 4.2,
       fee: 45000,
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmUZLXWV7bjq4JEKfH9no7rjNLQjdRFjOnA&s",
+      description: "Sunrise Public School focuses on holistic development with strong academic programs and extracurricular activities."
     },
     {
       id: 3,
@@ -53,6 +55,7 @@ export const d = {
       rating: 4.8,
       fee: 52000,
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbnyx8Y7g5tU3qrBUwvqwkvxazFID6bqaWA&s",
+      description: "Hillcrest Academy is known for its advanced curriculum and excellent faculty in science and humanities."
     },
     {
       id: 4,
@@ -71,6 +74,7 @@ export const d = {
       rating: 4.6,
       fee: 48000,
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp7cM2VeCTt6xifk15q7YrX-qH9N7QuBnmvA&s",
+      description: "Maple Leaf School offers innovative Canadian education with technology integration and student-centered learning."
     },
     {
       id: 5,
@@ -89,6 +93,7 @@ export const d = {
       rating: 4.1,
       fee: 47000,
       image: "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600",
+      description: "City Grammar School provides traditional British education with modern teaching methodologies in central London."
     },
     {
       id: 6,
@@ -107,6 +112,7 @@ export const d = {
       rating: 4.7,
       fee: 60000,
       image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=600",
+      description: "Elite International School offers world-class education with state-of-the-art facilities in Dubai."
     },
     {
       id: 7,
@@ -125,6 +131,7 @@ export const d = {
       rating: 4.4,
       fee: 52000,
       image: "https://images.unsplash.com/20/cambridge.JPG?q=80&w=847&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      description: "Bright Future Academy focuses on academic excellence and personality development in Australian education system."
     },
     {
       id: 8,
@@ -143,6 +150,7 @@ export const d = {
       rating: 4.3,
       fee: 49000,
       image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600",
+      description: "Harmony High School provides excellent education with focus on STEM subjects and language learning."
     },
     {
       id: 9,
@@ -161,6 +169,7 @@ export const d = {
       rating: 4.6,
       fee: 51000,
       image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600",
+      description: "Riverdale High offers balanced education with strong emphasis on both academics and extracurricular activities."
     },
     {
       id: 10,
@@ -179,6 +188,7 @@ export const d = {
       rating: 4.8,
       fee: 55000,
       image: "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600",
+      description: "Oxford Public School provides quality British education with heritage teaching methods and modern approaches."
     },
   ],
 
@@ -200,6 +210,7 @@ export const d = {
       rating: 4.7,
       fee: 60000,
       image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600",
+      description: "TechVille University is a leading institution for technology and business education with excellent research facilities."
     },
     {
       id: 2,
@@ -218,6 +229,7 @@ export const d = {
       rating: 4.3,
       fee: 55000,
       image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600",
+      description: "Global Business University specializes in business education with international curriculum and industry connections."
     },
     {
       id: 3,
@@ -236,6 +248,7 @@ export const d = {
       rating: 4.6,
       fee: 62000,
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600",
+      description: "Pacific Technical University offers cutting-edge programs in engineering and emerging technologies."
     },
     {
       id: 4,
@@ -254,6 +267,7 @@ export const d = {
       rating: 4.2,
       fee: 58000,
       image: "https://images.unsplash.com/20/cambridge.JPG?q=80&w=847&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      description: "European Design Institute is renowned for creative arts education with focus on design innovation and aesthetics."
     },
     {
       id: 5,
@@ -272,6 +286,7 @@ export const d = {
       rating: 4.5,
       fee: 59000,
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600",
+      description: "National Institute of Technology provides excellent technical education with strong industry-academia collaboration."
     },
     {
       id: 6,
@@ -290,6 +305,7 @@ export const d = {
       rating: 4.6,
       fee: 61000,
       image: "https://images.unsplash.com/photo-1562774053-701939374585?w=600",
+      description: "Sydney International University offers globally recognized degrees with multicultural learning environment."
     },
     {
       id: 7,
@@ -308,6 +324,7 @@ export const d = {
       rating: 4.4,
       fee: 60000,
       image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=886&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      description: "Berlin Technical University is known for its rigorous engineering programs and research excellence."
     },
     {
       id: 8,
@@ -326,6 +343,7 @@ export const d = {
       rating: 4.2,
       fee: 57000,
       image: "https://images.unsplash.com/photo-1720238189486-2b090d9a9459?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      description: "Tokyo Science University leads in robotics and artificial intelligence education with advanced research facilities."
     },
     {
       id: 9,
@@ -344,6 +362,7 @@ export const d = {
       rating: 4.5,
       fee: 60000,
       image: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600",
+      description: "Harborview University offers interdisciplinary education with focus on technology and social sciences."
     },
     {
       id: 10,
@@ -362,9 +381,11 @@ export const d = {
       rating: 4.3,
       fee: 56000,
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyq71tlwU5_qf7MWdr1aY4daHfK82bXNgR7Q&s",
+      description: "Midwest State University provides comprehensive education with strong programs in health sciences and business."
     },
   ],
-    FreelancePlatforms: [
+
+  FreelancePlatforms: [
     {
       id: 1,
       name: "Upwork",
@@ -377,6 +398,7 @@ export const d = {
       verified: true,
       rating: 4.6,
       image: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=600",
+      description: "Upwork is a leading global freelancing platform connecting businesses with independent professionals across all fields."
     },
     {
       id: 2,
@@ -390,6 +412,7 @@ export const d = {
       verified: true,
       rating: 4.4,
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600",
+      description: "Fiverr is a digital marketplace offering freelance services starting at $5 for various creative and professional tasks."
     },
     {
       id: 3,
@@ -403,6 +426,7 @@ export const d = {
       verified: true,
       rating: 4.8,
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600",
+      description: "Toptal is an exclusive network of top freelance talent in software development, design, and finance industries."
     },
     {
       id: 4,
@@ -416,6 +440,7 @@ export const d = {
       verified: true,
       rating: 4.3,
       image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=600",
+      description: "Guru is a flexible freelancing platform with secure payment systems and diverse professional service categories."
     },
     {
       id: 5,
@@ -429,6 +454,7 @@ export const d = {
       verified: true,
       rating: 4.2,
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600",
+      description: "PeoplePerHour connects businesses with freelance talent specializing in digital and creative services across Europe."
     },
     {
       id: 6,
@@ -442,6 +468,7 @@ export const d = {
       verified: true,
       rating: 4.5,
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600",
+      description: "Freelancer.com is one of the world's largest freelancing and crowdsourcing marketplaces with millions of users."
     },
     {
       id: 7,
@@ -455,6 +482,7 @@ export const d = {
       verified: true,
       rating: 4.6,
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+      description: "99Designs is a global creative platform specializing in design services through contests and one-to-one projects."
     },
     {
       id: 8,
@@ -468,6 +496,7 @@ export const d = {
       verified: true,
       rating: 4.3,
       image: "https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?w=600",
+      description: "DesignCrowd is a crowdsourcing platform connecting businesses with freelance designers for custom creative work."
     },
     {
       id: 9,
@@ -481,6 +510,7 @@ export const d = {
       verified: true,
       rating: 4.2,
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600",
+      description: "Workana is a leading freelancing platform in Latin America connecting businesses with remote professionals."
     },
     {
       id: 10,
@@ -494,6 +524,7 @@ export const d = {
       verified: true,
       rating: 4.1,
       image: "https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=600",
+      description: "Truelancer is a popular freelancing platform in India offering affordable freelance services across various domains."
     },
   ],
 
@@ -509,6 +540,7 @@ export const d = {
       verified: true,
       rating: 4.7,
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
+      description: "LinkedIn Jobs is the professional networking platform's job board connecting professionals with global opportunities."
     },
     {
       id: 2,
@@ -521,6 +553,7 @@ export const d = {
       verified: true,
       rating: 4.5,
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600",
+      description: "Indeed is the world's #1 job site with millions of job listings from thousands of company websites and job boards."
     },
     {
       id: 3,
@@ -533,6 +566,7 @@ export const d = {
       verified: true,
       rating: 4.4,
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
+      description: "Glassdoor provides job listings along with company reviews, salary reports, and interview insights from employees."
     },
     {
       id: 4,
@@ -545,6 +579,7 @@ export const d = {
       verified: true,
       rating: 4.3,
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600",
+      description: "Monster is a pioneering global employment website connecting job seekers with employers across industries."
     },
     {
       id: 5,
@@ -557,6 +592,7 @@ export const d = {
       verified: true,
       rating: 4.2,
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600",
+      description: "Rozee.pk is Pakistan's leading job portal connecting employers with job seekers across all major cities."
     },
     {
       id: 6,
@@ -569,6 +605,7 @@ export const d = {
       verified: true,
       rating: 4.3,
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+      description: "Bayt.com is the leading job site in the Middle East offering employment opportunities across the region."
     },
     {
       id: 7,
@@ -581,6 +618,7 @@ export const d = {
       verified: true,
       rating: 4.2,
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600",
+      description: "Naukri.com is India's number one job portal with millions of job listings across various industries and experience levels."
     },
     {
       id: 8,
@@ -593,6 +631,7 @@ export const d = {
       verified: true,
       rating: 4.4,
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600",
+      description: "CareerBuilder is a global HR technology company providing job posting, CV search, and recruitment solutions."
     },
     {
       id: 9,
@@ -605,6 +644,7 @@ export const d = {
       verified: true,
       rating: 4.3,
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600",
+      description: "JobStreet is a leading online employment company in Southeast Asia operating in multiple countries across the region."
     },
     {
       id: 10,
@@ -617,6 +657,7 @@ export const d = {
       verified: true,
       rating: 4.4,
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
+      description: "ZipRecruiter uses AI matching technology to connect employers with qualified job seekers efficiently."
     },
   ],
 };

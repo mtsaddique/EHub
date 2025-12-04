@@ -6,15 +6,14 @@
 
 .mainheader {
   width: 100%;
-  background: #111111;
-  color: white;
+background: linear-gradient(-345deg,rgb(76, 1, 146) 10%, rgb(0, 0, 0) 60%);  color: white;
 }
 
 .childheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  padding: 20px 25px;
 }
 
 .logoheader {

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { d } from '../../CommonFunction/Data.js';
 import { Review } from './Home.jsx';
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import { NavLink } from 'react-router-dom';
 
 function Product() {
     const [category, setCategory] = useState([]);
@@ -79,21 +80,21 @@ function Product() {
                                 {filteredSchools.length > 0 && (
                                     <div className="forschool">
                                         <h1 className="product-page-title">🏫 Schools</h1>
-                                        <Slider data={filteredSchools} />
+                                        <Slider data={filteredSchools} type="School" />
                                     </div>
                                 )}
 
                                 {filteredUniversities.length > 0 && (
                                     <div className="forUniversity">
                                         <h1 className="product-page-title">🎓 Universities</h1>
-                                        <Slider data={filteredUniversities} />
+                                        <Slider data={filteredUniversities} type="University" />
                                     </div>
                                 )}
 
                                 {filteredFreelancers.length > 0 && (
                                     <div className="forCollege">
                                         <h1 className="product-page-title">🏢 Freelancers</h1>
-                                        <Slider data={filteredFreelancers} />
+                                        <Slider data={filteredFreelancers} type="FreelancePlatforms" />
                                     </div>
                                 )}
 
@@ -117,51 +118,47 @@ export default Product;
 
 
 
-export function Slider({ data }) {
-    const slidebar = useRef(null);
-    const [visibleCards, setVisibleCards] = useState(5);
-    const setVis = useRef(null);
-
-    const moveLeft = () => {
-        slidebar.current.scrollBy({ left: -300, behavior: "smooth" });
-    };
-
-    const moveRight = () => {
-        slidebar.current.scrollBy({ left: 300, behavior: "smooth" });
-    };
-
-    const handleCard = () => {
-        setVisibleCards(visibleCards + 5);
-    };
-
+export function Slider({ data, type }) {
+    const [cardLength, setCardLength] = useState(3);
+    const disCard = useRef();
+    const handleCard = () =>{
+        setCardLength(cardLength + 3);
+    }
     useEffect(() => {
-        if (visibleCards >= data.length || data.length <= 5 || window.innerWidth > 768) {
-            if (setVis.current) setVis.current.style.display = 'none';
-        } else {
-            if (setVis.current) setVis.current.style.display = 'block';
+        if(cardLength >= data.length){
+            disCard.current.style.display = 'none';
         }
-    }, [visibleCards, data.length]);
+    }, [cardLength , data.length])
 
     return (
         <div className="slider-wrapper">
-            <button className="slider-btn left" onClick={moveLeft}><GoChevronLeft size={24} /></button>
-            <button className="slider-btn right" onClick={moveRight}><GoChevronRight size={24} /></button>
-
-            <div className="parentCard" ref={slidebar}>
-                {(window.innerWidth < 768 ? data.slice(0, visibleCards) : data).map((item) => (
+            <div className="parentCard" >
+                {data.slice(0 , cardLength).map((item) => (
                     <div className="card-product" key={item.id}>
-                        <img src={item.image} alt={item.name} />
-                        <h3>{item.name}</h3>
-                        <p>{item.description}</p>
-                        <span className="location-product">📍 {item.location}</span>
-                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="btn-product">
-                            Learn More
-                        </a>
+                        <div className="imgOne">
+                            <img src={item.image} alt={item.name} />
+                        </div>
+
+                        <div className="detailSec">
+                            <span>{item.country} | {item.city}</span>
+                            <h3>{item.name}</h3>
+                            <p>{item.description}</p>
+
+                            
+
+                            <NavLink to={`/viewdetail/${type}/${item.id}`} className="btn-product">
+                                Learn More
+                            </NavLink>
+                        </div>
+
+                        <div className="rankThre">
+                            <span className='ratePad'>⭐ {item.rating}</span>
+                            <span>💲 {item.fee}</span>
+                        </div>
                     </div>
                 ))}
-            </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-                <button className="viewMore" onClick={handleCard} ref={setVis}>view more</button>
+
+                <button onClick={handleCard} ref={disCard}>View More</button>
             </div>
         </div>
     );
