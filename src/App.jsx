@@ -11,7 +11,7 @@ function App() {
           <Header />
         </div>
 
-        <div className="content" style={{ marginTop: "85px" }}>
+        <div className="content" style={{ marginTop: "79px" }}>
           <Outlet />
         </div>
         <div className="footerLayout">
