@@ -1,6 +1,6 @@
-/* Product.css */
-
-/* Root */
+/* =======================
+   ROOT
+======================= */
 .filter-ui-root {
   display: flex;
   flex-direction: column;
@@ -11,11 +11,13 @@
   overflow-x: hidden;
 }
 
-/* Topbar */
+/* =======================
+   TOPBAR
+======================= */
 .topbar {
   position: fixed;
-  top: 60px;
-  left: 0;      /* sidebar width */
+  top: 80px;
+  left: 0;
   width: 100%;
   z-index: 999;
   display: flex;
@@ -50,7 +52,9 @@
   box-shadow: 0 0 5px rgba(128, 90, 213, 0.3);
 }
 
-/* Tabs */
+/* =======================
+   PRODUCT TABS
+======================= */
 .product-tabs {
   display: flex;
   gap: 0.5rem;
@@ -72,7 +76,9 @@
   color: white;
 }
 
-/* Right section */
+/* =======================
+   TOPBAR RIGHT
+======================= */
 .topbar-right {
   display: flex;
   align-items: center;
@@ -98,7 +104,9 @@
   box-shadow: 0 0 5px rgba(128, 90, 213, 0.3);
 }
 
-/* Layout */
+/* =======================
+   MAIN LAYOUT
+======================= */
 .main-layout {
   display: flex;
   gap: 1.5rem;
@@ -106,9 +114,12 @@
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  margin-top: 50px;
 }
 
-/* Sidebar Filter Rail */
+/* =======================
+   FILTER SIDEBAR
+======================= */
 .filter-rail {
   flex: 0 0 200px;
   max-width: 200px;
@@ -133,9 +144,12 @@
   margin-bottom: 0.5rem;
 }
 
+/* =======================
+   CHIPS / FILTER OPTIONS
+======================= */
 .chips {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* default for desktop */
   gap: 0.5rem;
 }
 
@@ -158,7 +172,9 @@
   background-color: #f0ebff;
 }
 
-/* Results Area */
+/* =======================
+   RESULTS AREA
+======================= */
 .results-area {
   flex: 1;
   display: flex;
@@ -174,198 +190,237 @@
 }
 
 .parentCard {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px 0;
-    scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-behavior: smooth;
 }
 
+/* =======================
+   CARD PRODUCT
+======================= */
 .card-product {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 200px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 16px;
-    /* padding: 16px; */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  padding: 16px;
+  margin-bottom: 16px;
+
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.2s ease-in-out;
 }
 
-.imgOne{
-  width: 27%;
-  border-right: 1px solid #eee;
-  height: 100%;
-}
-.imgOne img {
-    width: 300px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 12px;
-    padding: 5px;
+.card-product:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* LEFT DETAILS */
 .detailSec {
-    border-right: 1px solid #eee;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
 }
 
 .detailSec h3 {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
 
 .detailSec p {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #333;
+  font-size: 14px;
+  color: #444;
+  margin-top: 3px;
 }
 
 .location-product {
-    font-size: 14px;
-    color: #555;
-    margin-top: 8px;
-    display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
 }
 
 .rankThre {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: bold;
-    row-gap: 30px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
 }
 
+/* BUTTON */
 .btn-product {
-    margin-top: 10px;
-    width: 20%;
-    display: inline-block;
-    padding: 7px 16px;
-    background: #1e88e5;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-
-
-/* Slider Buttons */
-.slider-wrapper {
-  position: relative;
-  margin-bottom: 1.5rem;
-}
-
-.parentCard {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 10px 0;
-}
-
-.parentCard::-webkit-scrollbar {
-  display: none;
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: white;
-  border: 2px solid #ddd;
-  border-radius: 50%;
-  padding: 10px;
+  border: none;
+  padding: 10px 16px;
+  background-color: rgb(243, 64, 32);
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  flex-shrink: 0;
 }
 
-.slider-btn.left {
-  left: 0px;
+.btn-product:hover {
+  background-color: rgb(220, 50, 20);
 }
 
-.slider-btn.right {
-  right: 0;
+/* RIGHT IMAGE */
+.imgOne {
+  width: 180px;
+  height: 110px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/* Section Colors */
-.forschool .btn-product {
-  background: linear-gradient(135deg, #fc8181 0%, #e53e3e 100%);
+.imgOne img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.forCollege .btn-product {
-  background: linear-gradient(135deg, #63b3ed 0%, #3182ce 100%);
+/* SLIDER VIEW MORE BUTTON */
+.btn-pr{
+  padding: 10px 16px;
+  background-color: #3182ce;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
-.forUniversity .btn-product {
-  background: linear-gradient(135deg, #b794f4 0%, #805ad5 100%);
+.btn-pr:hover{
+  background-color: #2c5282;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
+/* =======================
+   RESPONSIVE — TABLET (≤768px)
+======================= */
+@media (max-width: 768px) {
+
   .main-layout {
     flex-direction: column;
-  }
-  .topbar{
-    display: block;
-  }
-  .topbar-right{
-    display: none;
-  }
-  .filter-rail {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .search-input {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .parentCard {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 1rem;
-    overflow-x: hidden !important;
+    padding: 1rem;
   }
 
   .card-product {
-    max-width: 100% !important;
-    width: 100% !important;
-    min-width: auto !important;
+    flex-direction: column;
+    gap: 12px;
   }
-  .chips{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+
+  .imgOne {
+    width: 100%;
+    height: 180px;
   }
-  .filter-rail{
+
+  .detailSec {
+    width: 100%;
+  }
+
+  .rankThre {
+    width: 100%;
+  }
+
+  .btn-product {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+  }
+
+  .topbar-right {
     display: none;
   }
-  /* Slider buttons hide on mobile */
-  .slider-btn {
-    display: none !important;
+
+  .topbar {
+    justify-content: center;
+  }
+
+  /* FILTER CHIPS IN ROW */
+  .chips {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+  }
+
+  .chips label {
+    flex: 0 1 auto;
+    white-space: nowrap;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .filter-rail {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 16px;
   }
 }
 
-.viewMore{
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: rgb(255, 224, 166);
-  color: rgb(99, 100, 100);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
+/* =======================
+   RESPONSIVE — MOBILE (≤480px)
+======================= */
+@media (max-width: 480px) {
+
+  .main-layout {
+    padding: 0.8rem;
+  }
+
+  .card-product {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .imgOne {
+    width: 100%;
+    height: 180px;
+  }
+
+  .detailSec h3 {
+    font-size: 16px;
+  }
+
+  .detailSec p,
+  .location-product {
+    font-size: 13px;
+  }
+
+  .rankThre {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .btn-product {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .filter-rail {
+    padding: 0.8rem;
+  }
+
+  .chips {
+    gap: 6px;
+  }
+
+  .chips label {
+    padding: 0.35rem 0.6rem;
+    font-size: 13px;
+  }
 }

@@ -158,7 +158,7 @@ export function Slider({ data, type }) {
                     </div>
                 ))}
 
-                <button onClick={handleCard} ref={disCard}>View More</button>
+                <button className='btn-pr' onClick={handleCard} ref={disCard}>View More</button>
             </div>
         </div>
     );
